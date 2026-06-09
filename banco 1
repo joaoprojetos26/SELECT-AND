@@ -1,0 +1,6 @@
+ SELECT Quantity,ProductID,OrderDetailID
+ FROM OrderDetails
+ WHERE Quantity >15
+ AND ProductID >10
+ ORDEr BY OrderDetailID ASC;
+ 
