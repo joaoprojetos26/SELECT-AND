@@ -14,3 +14,12 @@ FROM OrderDetails
 WHERE Quantity > 20
 and OrderID < 100
 ORDER BY productID ASC
+
+atividade 3
+SELECT ProductID AS 'produtos',
+OrderID AS 'orden',
+Quantity AS 'quantidade'
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 15
+AND OrderID %2=0
+ORDER BY OrderDetailID ASC;
