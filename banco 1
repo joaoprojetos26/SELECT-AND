@@ -26,7 +26,7 @@ ORDER BY Quantity ASC;
 
 atividade4
 SELECT  OrderID AS 'Orden',
- 		OrderDetailID AS 'Quantidade',
+ 		OrderDetailID AS 'Detalhes',
         ProductID AS 'Produtos'
  FROM OrderDetails
  WHERE OrderDetailID>50
@@ -59,4 +59,15 @@ FROM OrderDetails
 WHERE ProductID >20
 AND Quantity =1
 ORDER BY OrderID ASC;
+
+atividade8
+SELECT  Quantity AS 'Quantidade',
+ 		ProductID AS 'Produtos',
+        OrderDetailID AS 'Detalhe'
+ FROM OrderDetails
+ WHERE OrderDetailID%5=0
+ AND ProductID<10
+ ORDEr BY Quantity ASC;
+
+atividade9
 
