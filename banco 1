@@ -6,4 +6,11 @@
  AND ProductID >10
  ORDEr BY OrderDetailID ASC;
  
- 
+ atividade 2
+SELECT OrderID,
+Quantity,
+ProductID
+FROM OrderDetails
+WHERE Quantity > 20
+and OrderID < 100
+ORDER BY productID ASC
