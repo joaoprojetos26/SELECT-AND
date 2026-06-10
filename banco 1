@@ -23,3 +23,12 @@ FROM OrderDetails
 WHERE ProductID BETWEEN 5 AND 15
 AND OrderID %2=0
 ORDER BY OrderDetailID ASC;
+
+atividade4
+SELECT  OrderID AS 'orden',
+ 		OrderDetailID AS 'quantidade',
+        ProductID AS 'produtos'
+ FROM OrderDetails
+ WHERE OrderDetailID>50
+ AND ProductID%10=0
+ ORDEr BY OrderID ASC;
