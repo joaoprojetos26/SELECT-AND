@@ -50,3 +50,13 @@ SELECT OrderDetailID AS 'Detalhe',
  WHERE OrderID=300 
  AND Quantity Between 10 and 20
  ORDEr BY OrderDetailID ASC;
+
+atividade7
+SELECT OrderID AS 'Orden',
+       ProductID AS 'Produtos',
+       Quantity AS 'Quantidade'
+FROM OrderDetails
+WHERE ProductID >20
+AND Quantity =1
+ORDER BY OrderID ASC;
+
