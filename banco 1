@@ -1,6 +1,6 @@
- SELECT OrderDetailID AS 'orden',
- 		Quantity AS 'quantidade',
-        ProductID AS 'produtos'
+ SELECT OrderDetailID AS 'Orden',
+ 		Quantity AS 'Quantidade',
+        ProductID AS 'Produtos'
  FROM OrderDetails
  WHERE Quantity >15
  AND ProductID >10
@@ -16,19 +16,37 @@ and OrderID < 100
 ORDER BY productID ASC
 
 atividade 3
-SELECT ProductID AS 'produtos',
-OrderID AS 'orden',
-Quantity AS 'quantidade'
+SELECT ProductID AS 'Produtos',
+OrderID AS 'Orden',
+Quantity AS 'Quantidade'
 FROM OrderDetails
 WHERE ProductID BETWEEN 5 AND 15
 AND OrderID %2=0
-ORDER BY OrderDetailID ASC;
+ORDER BY Quantity ASC;
 
 atividade4
-SELECT  OrderID AS 'orden',
- 		OrderDetailID AS 'quantidade',
-        ProductID AS 'produtos'
+SELECT  OrderID AS 'Orden',
+ 		OrderDetailID AS 'Quantidade',
+        ProductID AS 'Produtos'
  FROM OrderDetails
  WHERE OrderDetailID>50
  AND ProductID%10=0
  ORDEr BY OrderID ASC;
+
+atividade5
+ SELECT  ProductID AS 'Produto',
+ 		Quantity AS 'Quantidade',
+        OrderID AS 'Ordem'
+ FROM OrderDetails
+ WHERE OrderID Between 100 and 200
+ And Quantity<12
+ ORDEr BY ProductID ASC;
+
+atividade6
+SELECT OrderDetailID AS 'Detalhe',
+        Quantity AS 'Quantidade',
+         OrderID AS 'Ordem'
+ FROM OrderDetails
+ WHERE OrderID=300 
+ AND Quantity Between 10 and 20
+ ORDEr BY OrderDetailID ASC;
